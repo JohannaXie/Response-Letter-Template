@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic Paper Response Letter. 
+% LaTeX Template
+% Version 1.0 (18/07/2023)
+% 
+% This template refers to the toolbox tutorial (in Chinese):
+% https://liam.page/2016/07/22/using-the-tcolorbox-package-to-create-a-new-theorem-environment/
+% Please refer to the tutorial for your customization. 
+% 
+% Template license: Creative Commons CC BY 4.0
+%
+% Author: Yuhan Xie
+% Contact email: yhxie0107@gmail.com
+% Any revision advice is welcome!
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass{article}
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage{times} % make the section title in Times New Roman
+
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=2.5cm,bottom=2cm,left=1.7cm,right=1.7cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{threeparttable} 
+\usepackage{multirow}
+\usepackage{url}
+
+
+\usepackage[most]{tcolorbox}
+
+
+
+
+\begin{document}
+	
+
+\newtcbtheorem[auto counter, number within = section]{cmt}{Comment}{
+	colbacktitle = black!60!white, colframe = black!60!white,
+	colback = black!5!white,
+	fonttitle=\bfseries,%fontupper=\itshape,
+}{t}
+
+
+
+\input{paper}
+
+
+\end{document}
